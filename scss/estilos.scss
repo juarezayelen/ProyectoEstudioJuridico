@@ -22,18 +22,7 @@
       padding: 5px;
     }
 
-    .contenedor-2 {
-      height: 300px;
-      width: 80%;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      text-align: center;
-      justify-content: space-evenly;
-      /*align-items: center;*/
-      background-size: cover;
-      align-items: stretch;
-    }
+ 
     .contenedor-2__foto {
       height: 150px; /*ajusto la altura de la foto para dispositivos móviles*/
       width: 200px; /*ajusto el ancho de la foto para dispositivos móviles*/
@@ -48,7 +37,7 @@
       transition-duration: 0.3s;
     }
     
-    /*Agrando las fuentes del carrusel */
+    /*Achico las fuentes del carrusel */
     .FormatoCarrusel1 {
       color:rgb(12, 102, 117);
       font-size: 30px;
