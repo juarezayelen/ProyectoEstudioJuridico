@@ -257,6 +257,8 @@ input:focus {
   color: #0c6675;
 }
 
+/* Declaración de variables globales */
+/* Ancho elegido para cada media query y para que sea responsive */
 /*Inicio de medias queries */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .imgnormalizada img {
@@ -270,28 +272,6 @@ input:focus {
   }
   .contenedor-1 {
     padding: 5px;
-  }
-  .contenedor-2 {
-    height: 300px;
-    width: 80%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    text-align: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    /*align-items: center;*/
-    background-size: cover;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
   }
   .contenedor-2__foto {
     height: 150px;
@@ -307,15 +287,7 @@ input:focus {
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  .contenedor-2__foto:hover {
-    -webkit-animation: 1.5s movercaja infinite;
-            animation: 1.5s movercaja infinite;
-    -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2);
-    -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-  }
-  /*Agrando las fuentes del carrusel */
+  /*Achico las fuentes del carrusel */
   .FormatoCarrusel1 {
     color: #0c6675;
     font-size: 30px;
