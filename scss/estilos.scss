@@ -1,0 +1,172 @@
+/*Imports de estilos */
+@import "header";
+@import "footer";
+@import "generales";
+
+/*Inicio de medias queries */
+@media only screen and (min-width:320px) and (max-width:480px) 
+/* Modificaciones para cuando el ancho de la pantalla está entre 320 y 480 píxeles*/
+  {
+    .imgnormalizada img {     
+      background-size: cover;
+                     }
+
+    header nav {
+      width:80%;
+      height:100%;
+      margin:0;
+      position:fixed;
+    }
+
+    .contenedor-1 {
+      padding: 5px;
+    }
+
+    .contenedor-2 {
+      height: 300px;
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      text-align: center;
+      justify-content: space-evenly;
+      /*align-items: center;*/
+      background-size: cover;
+      align-items: stretch;
+    }
+    .contenedor-2__foto {
+      height: 150px; /*ajusto la altura de la foto para dispositivos móviles*/
+      width: 200px; /*ajusto el ancho de la foto para dispositivos móviles*/
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: center;
+    }
+    
+    .contenedor-2__foto:hover {
+      animation: 1.5s movercaja infinite;
+      transform: scale(1.2, 1.2);
+      transition-duration: 0.3s;
+    }
+    
+    /*Agrando las fuentes del carrusel */
+    .FormatoCarrusel1 {
+      color:rgb(12, 102, 117);
+      font-size: 30px;
+      font-weight: bold;
+      text-transform: capitalize;
+      position: center;
+      border-color: grey;
+    }
+    .FormatoLetraCarrusel {
+      color:rgb(12, 102, 117);
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .carousel-caption a {
+      color:rgb(12, 102, 117);
+      font-size: 10px;
+      font-weight: bold;
+    }
+
+    #comentariosForm {
+      width: 80%;
+      height: 200px;
+    }
+
+    #mapa {
+      width:80%;
+      height:300px;  
+    }
+  }
+  
+  @media only screen and (min-width:481px) and (max-width:575px) {
+    .card {
+      float:center;
+      width:80%;
+     }
+ 
+     #comentariosForm {
+       width: 80%;
+       height: 200px;
+     }
+ 
+     #mapa {
+       width:80%;
+       height:300px;  
+     }
+  }
+
+  @media only screen and (min-width:576px) and (max-width:780px) {
+     /* Modificaciones para cuando el ancho de la pantalla está entre 576px y 780px */
+    .card {
+      /*No logro hacer que las cards queden mejor ajustadas*/
+      width:20%;
+      height:10%;
+     }
+     #comentariosForm {
+       width: 80%;
+       height: 200px;
+     }
+ 
+     #mapa {
+       width:80%;
+       height:300px;  
+     }
+  }
+  @media only screen and (min-width:781px) and (max-width:1024px) {
+    /* Modificaciones para cuando el ancho de la pantalla está entre 481px y 1024px */
+
+    #comentariosForm {
+      width: 80%;
+      height: 200px;
+    }
+
+    #mapa {
+      width:80%;
+      height:300px;  
+    }
+   
+  }
+
+  @media only screen and (min-width:1025px){
+    /*Agrando los tamaños de las fuentes en los párrafos para dispositivos con más de 1025 px */
+    .contenedor-1--p {
+      color: rgb(12, 102, 117);
+      font-style: italic;
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    .contenedor-2 p {
+      color: rgb(84, 112, 117);
+      font-weight: bold;
+      font-style: italic;
+      font-size: 16px;
+      line-height: 16px;
+    }
+    
+    .card {
+      width:25%;
+    }
+
+    label {
+      font-size: 16px;
+      line-height: 16px;
+    }
+    #comentariosForm {
+      width: 80%;
+      height: 200px;
+    }
+
+    #mapa {
+      width:80%;
+      height:300px;  
+    }
+  }
+
+/* Fin de medias queries */
+
+
+
+  
+  

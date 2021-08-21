@@ -1,0 +1,138 @@
+/* ----Estilos generales de la página----- */
+
+*{ 
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+
+
+main 
+{
+  font-family: 'Nunito'; /* Fuente elegida de google font */
+  line-height: 14px; /* Cambia la separación entre líneas */
+  font-size: 15px; /* Se especifica el tamaño de la fuente */
+  background-color: #85929E ;
+}
+
+
+/*---------------------- Estilos para mi menú navegable - Inicio ----------------------*/
+
+a:link {
+    color:rgb(12, 102, 117); /* Color para enlaces no visitados */
+    font-weight: bold;
+}          
+a:visited { color: rgb(63, 102, 109); }     /* Color para enlaces visitados */
+a:hover { background: rgb(92, 181, 197); }  /* Color para cuando el usuario esta sobre el enlace */
+
+
+/*---------------------- Estilos para mi menú navegable - Fin ----------------------*/
+
+.imgnormalizada img {
+    width: 100%;
+    height: 500px;
+    max-height: 500px;
+    background-size: cover;
+  }
+
+/*-----------------Estilos para el carrusel------------------------*/
+
+  .FormatoCarrusel1 {
+    color:rgb(12, 102, 117);
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: center;
+    border-color: grey;
+  }
+  .FormatoLetraCarrusel {
+    color:rgb(12, 102, 117);
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .carousel-caption a {
+    color:rgb(12, 102, 117);
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+/*-----------------Estilos para el carrusel------------------------*/
+
+.contenedor-1__subtitulos {
+    color: rgb(12, 102, 117);
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+.contenedor-1--p {
+    color: rgb(12, 102, 117);
+    font-style: italic;
+}
+.contenedor-2 {
+    height: 300px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    background-size: cover;
+    align-items: stretch;
+  
+  }
+  
+  .contenedor-2 p {
+    color: rgb(12, 102, 117);
+    font-weight: bold;
+    vertical-align: middle;
+  }
+
+  .contenedor-2__foto {
+    height: 250px;
+    width: 300px;
+    vertical-align: middle;
+  }
+  
+  .contenedor-2__foto:hover {
+    animation: 1.5s movercaja infinite;
+    transform: scale(1.2, 1.2);
+    transition-duration: 0.3s;
+  }
+
+
+ .card-body {
+    background-color: #ABB2B9;
+    color: rgb(12, 102, 117);/* Modifica color de las letras */
+    font-weight: bold;/* Cambia la letra de la fuente a negrita */
+    text-align: center;
+    
+}
+
+ul li { /*Estilo de listas incluidas en la card */
+    list-style-position: inside;
+    text-align: justify;
+}
+  .contenedor-3 {
+    color: rgb(12, 102, 117);/* Modifica color de las letras del formulario */
+    font-weight: bold;/* Cambia la letra de la fuente a negrita */
+  }
+
+  #myModal modal-header {
+    color: rgb(12, 102, 117);
+  }
+  #volverAlInicio {
+    text-align: center; /* Cambia la alineación del link para volver al inicio */
+    display: block;
+  }
+  
+
+  input {
+    transition: all 2s;
+  }
+  
+  input:focus {
+    font-size: 18px;
+    border: 2px solid rgb(12, 102, 117);
+    color: rgb(12, 102, 117);
+  }
+  

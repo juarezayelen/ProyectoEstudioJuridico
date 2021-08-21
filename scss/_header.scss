@@ -1,0 +1,30 @@
+.header
+{
+  background-color: #34495E;
+  background: linear-gradient(to bottom, #34495E, #85929E);
+}
+
+.header h1 {
+    font-family: 'Nunito'; /* Fuente elegida de google font */
+    color: rgb(31, 168, 192);/* Cambia el título principal (h1) a color celeste */
+    font-size: 30px; /* Cambia el tamaño de la fuente */
+    font-weight: bold;/* Cambiar el grosor de la fuente, en este caso, se muestra la letra en negrita */
+    letter-spacing: 2px;/* Modifica el espaciado entre letras */
+    text-transform: uppercase;/* Cambia el título a letras mayúsculas */
+    text-decoration: underline;/* Subraya el título */
+    text-shadow: 3px 3px 3px rgb(12, 96, 148);
+    animation-duration: 2s;
+    animation-name: aparecer;/*Se agrega animación al título principal */
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    text-align: center;
+  }
+  
+  @keyframes aparecer { /*Animación del título principal*/
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

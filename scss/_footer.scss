@@ -1,0 +1,37 @@
+footer {
+    background-color: #34495E;
+    background: linear-gradient(to bottom, #85929E, #34495E) ;
+}
+
+footer h6 {
+    color: rgb(14, 109, 126);
+  }
+  
+  .dato {
+    color: rgb(19, 139, 160);
+    font-weight: bold;/* Cambia la letra de la fuente a negrita */
+    text-align: center;/* Cambia la alineación del texto de los datos de contacto */
+  }
+  
+  #mapa {
+    display: block;
+    margin: auto;
+  }
+
+  .ciudad {
+    text-align: center;
+    color: rgb(12, 102, 117);
+    font-weight: bold;
+  }
+  
+  .direccion {
+    text-align: center;
+    color: rgb(12, 102, 117);
+    font-weight: bold;
+  }
+  
+  .telefono {
+    text-align: center;
+    color: rgb(12, 102, 117);
+    font-weight: bold;
+  }
