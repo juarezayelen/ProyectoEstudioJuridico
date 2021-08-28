@@ -1,6 +1,12 @@
 footer {
     background-color: #34495E;
     background: linear-gradient(to bottom, #85929E, #34495E) ;
+
+    .logo {
+      display: flexbox;
+      flex-wrap: wrap;
+      
+    }
 }
 
 footer h6 {
@@ -15,7 +21,7 @@ footer h6 {
   
   #mapa {
     display: block;
-    margin: auto;
+    /*margin: auto;*/
   }
 
   .ciudad {

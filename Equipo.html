@@ -9,13 +9,12 @@
     <meta name="description" content="Este es el sitio web de un estudio
       jurídico ubicado en la ciudad de La Plata y que cuenta con más de 10 años
       de experiencia">
-    <meta name="keywords" content="Estudio Jurídico, Contacto, Formas de contacto">
+    <meta name="keywords" content="Estudio Jurídico, Equipo, Abogados">
     <!--Link para importar fuente de Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap" rel="stylesheet">
-  
     <!--Link para importar archivo de estilo .css-->
     <link rel="stylesheet" href="estilos.css">
-
+    
     <!--Links para incorporar Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -50,95 +49,22 @@
           </div>
       </nav>
     </header>
-
     <main>
-      <a href="Contacto" id=Contacto></a>
-      <h2 class="contenedor-1__subtitulos">Contacto</h2>
-      <!--Se crea el formulario de contacto con bootstrap-->
-      <br>
-
-      <div class="contenedor-3">
-        <form action="">
-          <div class="form-group">
-            <label for="NombreyApellido">Nombre y Apellido:</label>
-            <input type="NombreyApellido" class="form-control"
-              id="NombreyApellido" placeholder="Ingrese su nombre completo"
-              name="NombreyApellido">
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email"
-              placeholder="Ingrese email" name="email">
-          </div>
-
-          <div class="form-group">
-            <label for="telefono">Teléfono:</label>
-            <input type="telefono" class="form-control" id="telefono"
-              placeholder="Ingrese su teléfono" name="telefono">
-          </div>
-
-          <label>Motivo de la consulta</label>
-          <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle"
-              data-toggle="dropdown">
-              Elige el servicio por el que consulta:
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Sucesiones</a>
-              <a class="dropdown-item" href="#">Accidentes</a>
-              <a class="dropdown-item" href="#">Derecho Laboral</a>
-              <a class="dropdown-item" href="#">Derecho de Familia</a>
-            </div>
-          </div>
+    <section class="contenedor-1"></section>
+    <a href="Equipo.html"></a>
+        <h2 class="contenedor-1__subtitulos">Equipo</h2> <!--Aplico BEM-->
+        <br>
+        <div class="contenedor-2"> <!--Primer item-->
+          <img class="contenedor-2__foto" src="images/lawyer1.jpg" alt="Foto de abogado 1">
           <br>
-          <label>Horario de contacto:</label><br>
-          <div class="form-group">
-            <input type="checkbox" id="checkbox1" name="checkbox1">
-            <label for="checkbox1"> L a V de 9.00 a 13.00 hs</label>
-            <br>
-            <input type="checkbox" id="checkbox2" name="checkbox2">
-            <label for="checkbox1"> L a V de 14.00 a 18.00 hs</label>
-          </div>
-          <div class="form-group">
-            <textarea name="Comentarios" id="comentariosForm" 
-              placeholder="Escribe tu mensaje"></textarea>
-          </div>
-          <button type="submit" class="btn btn-dark" data-toggle="modal"
-            data-target="#myModal">
-            Enviar
-          </button>
-
-        </form>
-
-
-        <div class="modal" id="myModal"> <!--Nuevo Modal de confirmación de envío formulario-->
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h3 class="modal-title">Confirmación de envío de formulario</h3>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-
-              <!-- Modal body -->
-              <div class="modal-body">
-                <p>
-                  El envío del formulario fue exitoso.
-                  Gracias por su consulta, lo contactaremos a la brevedad.
-                </p>
-              </div>
-
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger"
-                  data-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-success"
-                  data-dismiss="modal">Aceptar</button>
-              </div>
-            </div>
-          </div>
+          <p>Breve biografía de la abogada</p>
         </div>
-      </div>
+        <br>
+        <div class="contenedor-2"> <!--Segundo item-->
+          <img class="contenedor-2__foto" src="images/lawyer2.jpg" alt="Foto de abogado 2">
+          <br>
+          <p>Breve biografía del abogado</p>
+        </div>
     </section>
     <br>
   </main>
@@ -165,14 +91,5 @@
     <a target="_blank" href="https://ar.linkedin.com/"><img src="images/logoLinkedin.png" alt="Logo de linkedin"></a>
     </div>
   </footer>
-  <script>
-      $("#myModal").on('click',function(){
-          $("#myModal").modal('show');
-      });
-      $("#myModal").on('show.bs.modal', function(){
-          alert("Su consulta fue enviada exitosamente. Gracias por contactarse!");
-      });
-      
-  </script>
 </body>
 </html>

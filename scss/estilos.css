@@ -60,6 +60,12 @@ footer {
   background: linear-gradient(to bottom, #85929E, #34495E);
 }
 
+footer .logo {
+  display: flexbox;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 footer h6 {
   color: #0e6d7e;
 }
@@ -74,7 +80,7 @@ footer h6 {
 
 #mapa {
   display: block;
-  margin: auto;
+  /*margin: auto;*/
 }
 
 .ciudad {
@@ -97,9 +103,12 @@ footer h6 {
 
 /* ----Estilos generales de la página----- */
 * {
-  padding: 2px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #85929E;
+  overflow-x: hidden;
 }
 
 main {
@@ -131,8 +140,6 @@ a:hover {
 /* Color para cuando el usuario esta sobre el enlace */
 /*---------------------- Estilos para mi menú navegable - Fin ----------------------*/
 .imgnormalizada img {
-  width: 100%;
-  height: 500px;
   max-height: 500px;
   background-size: cover;
 }
@@ -188,9 +195,6 @@ a:hover {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   background-size: cover;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
 }
 
 .contenedor-2 p {
@@ -215,6 +219,7 @@ a:hover {
 }
 
 .card-body {
+  padding: 0;
   background-color: #ABB2B9;
   color: #0c6675;
   /* Modifica color de las letras */
@@ -261,20 +266,17 @@ input:focus {
 /* Ancho elegido para cada media query y para que sea responsive */
 /*Inicio de medias queries */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  .imgnormalizada img {
-    background-size: cover;
-  }
+  /*.imgnormalizada img {     
+      background-size: cover;
+                     }*/
   header nav {
     width: 80%;
     height: 100%;
     margin: 0;
     position: fixed;
   }
-  .contenedor-1 {
-    padding: 5px;
-  }
   .contenedor-2__foto {
-    height: 150px;
+    height: 250px;
     /*ajusto la altura de la foto para dispositivos móviles*/
     width: 200px;
     /*ajusto el ancho de la foto para dispositivos móviles*/
@@ -306,6 +308,10 @@ input:focus {
     font-size: 10px;
     font-weight: bold;
   }
+  .card {
+    float: center;
+    width: 200px;
+  }
   #comentariosForm {
     width: 80%;
     height: 200px;
@@ -318,7 +324,8 @@ input:focus {
 
 @media only screen and (min-width: 481px) and (max-width: 575px) {
   .card {
-    float: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     width: 80%;
   }
   #comentariosForm {
@@ -335,8 +342,7 @@ input:focus {
   /* Modificaciones para cuando el ancho de la pantalla está entre 576px y 780px */
   .card {
     /*No logro hacer que las cards queden mejor ajustadas*/
-    width: 20%;
-    height: 10%;
+    display: inline-block;
   }
   #comentariosForm {
     width: 80%;

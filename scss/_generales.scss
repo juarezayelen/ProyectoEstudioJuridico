@@ -1,8 +1,12 @@
 /* ----Estilos generales de la página----- */
 
 *{ 
-    padding: 2px;
+    
     box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    background-color: #85929E ;
+    overflow-x: hidden;
 }
 
 
@@ -29,8 +33,7 @@ a:hover { background: rgb(92, 181, 197); }  /* Color para cuando el usuario esta
 /*---------------------- Estilos para mi menú navegable - Fin ----------------------*/
 
 .imgnormalizada img {
-    width: 100%;
-    height: 500px;
+    
     max-height: 500px;
     background-size: cover;
   }
@@ -77,7 +80,6 @@ a:hover { background: rgb(92, 181, 197); }  /* Color para cuando el usuario esta
     text-align: center;
     justify-content: space-evenly;
     background-size: cover;
-    align-items: stretch;
   
   }
   
@@ -101,6 +103,7 @@ a:hover { background: rgb(92, 181, 197); }  /* Color para cuando el usuario esta
 
 
  .card-body {
+    padding:0;
     background-color: #ABB2B9;
     color: rgb(12, 102, 117);/* Modifica color de las letras */
     font-weight: bold;/* Cambia la letra de la fuente a negrita */
