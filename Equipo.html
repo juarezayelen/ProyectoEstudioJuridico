@@ -24,40 +24,55 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Fav icon (Icono en pesaña del navegador) -->
     <link rel="shortcut icon" href="images/balanzaJusticia.png" type="image/x-icon">
-
+    <style>
+      .fondoEquipo {
+        background-image: url(images/fondoGeneral.jpg);
+        background-size: cover;
+        filter: brightness(100%);
+      }
+    </style>
   </head>
 
   <body>
-
+    
     <header class="header">
       <h1>Estudio Jurídico H&H</h1> <!--Título principal de la página-->
-      <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #85929E;">
-          <!-- Toggler/collapsible Button -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Navbar Links -->
-          <div class="collapse navbar-collapse" id="navbar">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="index.html" target="_self">Inicio</a>
-              <a class="nav-link" href="QuienesSomos.html" target="_self">¿Quiénes somos?</a>
-              <a class="nav-link" href="Servicios.html" target="_self">Servicios</a>
-              <a class="nav-link" href="Equipo.html" target="_self">Equipo</a>
-              <a class="nav-link" href="Contacto.html" target="_self">Contacto</a>
-            </div>
-          </div>
-      </nav>
     </header>
     <main>
+      <!-- Agrego menú pegajoso con logo -->
+      <nav class="navbar navbar-expand-sm navbar-light sticky-top" style="background-color:#85929E;">
+        <div>
+        <a class="navbar-brand" href="#"><img src="images/balanzaJusticia.png" width="40" height="40" alt=""></a>
+        </div>
+        <!-- Toggler/collapsible Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbar">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              target="_self">Inicio</a>
+            <a class="nav-link" href="QuienesSomos.html" target="_self">¿Quiénes
+              somos?</a>
+            <a class="nav-link" href="Servicios.html" target="_self">Servicios</a>
+            <a class="nav-link" href="Equipo.html" target="_self">Equipo</a>
+            <a class="nav-link" href="Contacto.html" target="_self">Contacto</a>
+          </div>
+        </div>
+        <span class="navbar-text"> <!--Texto de contacto-->
+          Teléfono de contacto: 2211234567
+        </span>
+      </nav>
+      <div class="fondoEquipo">
     <section class="contenedor-1"></section>
-    <a href="Equipo.html"></a>
         <h2 class="contenedor-1__subtitulos">Equipo</h2> <!--Aplico BEM-->
         <br>
         <div class="contenedor-2"> <!--Primer item-->
           <img class="contenedor-2__foto" src="images/lawyer1.jpg" alt="Foto de abogado 1">
           <br>
-          <p>Breve biografía de la abogada</p>
+          <p>Breve biografía del abogado</p>
         </div>
         <br>
         <div class="contenedor-2"> <!--Segundo item-->
@@ -67,6 +82,7 @@
         </div>
     </section>
     <br>
+  </div>
   </main>
   <footer>
     <br>

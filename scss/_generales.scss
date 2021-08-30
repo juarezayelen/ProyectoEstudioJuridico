@@ -6,10 +6,12 @@
     margin: 0;
     padding:0;
     background-color: #85929E ;
-    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
-
+html, body {
+  overflow: visible;
+}
 
 main 
 {
@@ -17,17 +19,31 @@ main
   line-height: 14px; /* Cambia la separación entre líneas */
   font-size: 15px; /* Se especifica el tamaño de la fuente */
   background-color: #85929E ;
+  
 }
 
 
 /*---------------------- Estilos para mi menú navegable - Inicio ----------------------*/
 
+nav .navbar-nav {
+  font-weight: bold;
+  color: rgb(12, 102, 117);
+}
+nav .navbar-text {
+  font-weight: bold;
+  color: rgb(12, 102, 117);
+}
+
 a:link {
     color:rgb(12, 102, 117); /* Color para enlaces no visitados */
     font-weight: bold;
 }          
-a:visited { color: rgb(63, 102, 109); }     /* Color para enlaces visitados */
-a:hover { background: rgb(92, 181, 197); }  /* Color para cuando el usuario esta sobre el enlace */
+a:visited {
+  color: purple; /* Color para enlaces visitados */
+}     
+a:hover {
+  background: rgb(92, 181, 197); /* Color para cuando el usuario esta sobre el enlace */
+}  
 
 
 /*---------------------- Estilos para mi menú navegable - Fin ----------------------*/
@@ -59,7 +75,7 @@ a:hover { background: rgb(92, 181, 197); }  /* Color para cuando el usuario esta
     font-weight: bold;
   }
 
-/*-----------------Estilos para el carrusel------------------------*/
+/*-----------------Fin de Estilos para el carrusel------------------------*/
 
 .contenedor-1__subtitulos {
     color: rgb(12, 102, 117);
@@ -140,4 +156,5 @@ ul li { /*Estilo de listas incluidas en la card */
     border: 2px solid rgb(12, 102, 117);
     color: rgb(12, 102, 117);
   }
+
   

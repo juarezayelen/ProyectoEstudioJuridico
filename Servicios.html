@@ -11,29 +11,48 @@
         <meta name="keywords" content="Estudio Jurídico, Servicios, Juicios,
             Laboral, Divorcios, Accidentes">
         <!--Link para importar fuente de Google Font-->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap" rel="stylesheet">
-        
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap"
+            rel="stylesheet">
+
         <!--Link para importar archivo de estilo .css-->
         <link rel="stylesheet" href="estilos.css">
 
         <!--Links para incorporar Bootstrap-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="js/bootstrap.min.js"></script>
 
         <!-- Fav icon (Icono en pesaña del navegador) -->
-        <link rel="shortcut icon" href="images/balanzaJusticia.png" type="image/x-icon">
-
+        <link rel="shortcut icon" href="images/balanzaJusticia.png"
+            type="image/x-icon">
+        <style>
+            .fondoServicios {
+            background-image: url(images/fondoGeneral.jpg);
+         background-size: cover;
+            filter: brightness(100%);
+      }
+        </style>
     </head>
 
     <body>
-
         <header class="header">
             <h1>Estudio Jurídico H&H</h1> <!--Título principal de la página-->
-            <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #85929E;">
+        </header>
+
+        <main>
+            <!-- Agrego menú pegajoso con logo -->
+            <nav class="navbar navbar-expand-sm navbar-light sticky-top" style="background-color:#85929E;">
+                <div>
+                    <a class="navbar-brand" href="#"><img src="images/balanzaJusticia.png" width="40" height="40" alt=""></a>
+                </div>
                 <!-- Toggler/collapsible Button -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
                     <span class="navbar-toggler-icon"></span>
@@ -49,87 +68,96 @@
                         <a class="nav-link" href="Contacto.html" target="_self">Contacto</a>
                     </div>
                 </div>
+                <span class="navbar-text"> <!--Texto de contacto-->
+                    Teléfono de contacto: 2211234567
+                </span>
             </nav>
-        </header>
-
-        <main>
-            <section class="contenedor-1">
-                <br>
-                <a href="Servicios.html"></a>
-                <h2 class="contenedor-1__subtitulos">Servicios</h2>
-                <br>
-                <div class="columns">
-                    <div class="col-sm-12 col-lg-12">
-                        <div class="card-deck">
-                            <div class="card">
-                                <img class="card-img-top" src="images/sucesiones.png" alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title">Sucesiones</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit
-                                        amet consectetur
-                                        adipisicing elit. Quos accusamus totam
-                                        facilis.</p>
-                                    <ul>
-                                        <li>Ab Intestato</li>
-                                        <li>Testamentarias</li>
-                                        <li>Cesión de derechos sucesorios</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-info" align="center">Ver Más Info</a>
+            <div class="fondoServicios">
+                <section class="contenedor-1">
+                    <br>
+                    <h2 class="contenedor-1__subtitulos">Servicios</h2>
+                    <br>
+                    <div class="columns">
+                        <div class="col-sm-12 col-lg-12">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/sucesiones.png" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Sucesiones</h4>
+                                        <p class="card-text">Lorem ipsum dolor
+                                            sit
+                                            amet consectetur
+                                            adipisicing elit. Quos accusamus
+                                            totam
+                                            facilis.</p>
+                                        <ul>
+                                            <li>Ab Intestato</li>
+                                            <li>Testamentarias</li>
+                                            <li>Cesión de derechos sucesorios</li>
+                                        </ul>
+                                        <a href="Servicios.html" class="btn btn-info" align="center">Ver Más Info</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top" src="images/sucesiones.png" alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title">Accidentes</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit
-                                        amet consectetur
-                                        adipisicing elit. Quos accusamus totam
-                                        facilis.</p>
-                                    <ul>
-                                        <li>Accidentes de tránsito</li>
-                                        <li>Daños y perjuicios</li>
-                                        <li>Lesiones</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-info" align="center">Ver Más Info</a>
+                                <div class="card">
+                                    <img class="card-img-top" src="images/sucesiones.png" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Accidentes</h4>
+                                        <p class="card-text">Lorem ipsum dolor
+                                            sit
+                                            amet consectetur
+                                            adipisicing elit. Quos accusamus
+                                            totam
+                                            facilis.</p>
+                                        <ul>
+                                            <li>Accidentes de tránsito</li>
+                                            <li>Daños y perjuicios</li>
+                                            <li>Lesiones</li>
+                                        </ul>
+                                        <a href="Servicios.html" class="btn btn-info" align="center">Ver Más Info</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top" src="images/sucesiones.png" alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title">Derecho Laboral</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit
-                                        amet consectetur
-                                        adipisicing elit. Quos accusamus totam
-                                        facilis.</p>
-                                    <ul>
-                                        <li>Accidentes de trabajo</li>
-                                        <li>Gestiones ante la ART</li>
-                                        <li>Despidos</li>
-                                        <li>Indemnizaciones</li>
-                                        <li>Trabajo informal</li>
-                                    </ul><a href="#" class="btn btn-info" align="center">Ver Más Info</a>
+                                <div class="card">
+                                    <img class="card-img-top" src="images/sucesiones.png" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Derecho Laboral</h4>
+                                        <p class="card-text">Lorem ipsum dolor
+                                            sit
+                                            amet consectetur
+                                            adipisicing elit. Quos accusamus
+                                            totam
+                                            facilis.</p>
+                                        <ul>
+                                            <li>Accidentes de trabajo</li>
+                                            <li>Gestiones ante la ART</li>
+                                            <li>Despidos</li>
+                                            <li>Indemnizaciones</li>
+                                            <li>Trabajo informal</li>
+                                        </ul><a href="Servicios.html" class="btn btn-info" align="center">Ver Más Info</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top" src="images/sucesiones.png" alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title">Derecho de Familia</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit
-                                        amet consectetur
-                                        adipisicing elit. Quos accusamus totam
-                                        facilis.</p>
-                                    <ul>
-                                        <li>Alimentos</li>
-                                        <li>Régimen de comunicación</li>
-                                        <li>Divorcios</li>
-                                        <li>Filiación</li>
-                                    </ul><a href="#" class="btn btn-info" align="center">Ver Más Info</a>
+                                <div class="card">
+                                    <img class="card-img-top" src="images/sucesiones.png" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Derecho de Familia</h4>
+                                        <p class="card-text">Lorem ipsum dolor
+                                            sit
+                                            amet consectetur
+                                            adipisicing elit. Quos accusamus
+                                            totam
+                                            facilis.</p>
+                                        <ul>
+                                            <li>Alimentos</li>
+                                            <li>Régimen de comunicación</li>
+                                            <li>Divorcios</li>
+                                            <li>Filiación</li>
+                                        </ul><a href="Servicios.html" class="btn btn-info" align="center">Ver Más Info</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
         <footer>
             <br>
@@ -149,9 +177,12 @@
             <p class="dato">Formas de Contacto</p>
             <!--Se agregan los iconos de las redes sociales disponibles para contactarse-->
             <div class="logo">
-                <a target="_blank" href="https://www.facebook.com/"><img src="images/logoFacebook.jpg" alt="Logo de facebook"></a>
-                <a target="_blank" href="https://outlook.live.com/owa/"><img src="images/logoEmail.jpg" alt="Logo de email"></a>
-                <a target="_blank" href="https://ar.linkedin.com/"><img src="images/logoLinkedin.png" alt="Logo de linkedin"></a>
+                <a target="_blank" href="https://www.facebook.com/"><img
+                        src="images/logoFacebook.jpg" alt="Logo de facebook"></a>
+                <a target="_blank" href="https://outlook.live.com/owa/"><img
+                        src="images/logoEmail.jpg" alt="Logo de email"></a>
+                <a target="_blank" href="https://ar.linkedin.com/"><img
+                        src="images/logoLinkedin.png" alt="Logo de linkedin"></a>
             </div>
         </footer>
     </body>
