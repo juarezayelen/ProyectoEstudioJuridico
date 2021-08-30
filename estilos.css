@@ -54,6 +54,12 @@
   }
 }
 
+footer .logo {
+  display: flexbox;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 footer {
   background-color: #34495E;
   background: -webkit-gradient(linear, left top, left bottom, from(#85929E), to(#34495E));
@@ -74,7 +80,7 @@ footer h6 {
 
 #mapa {
   display: block;
-  margin: auto;
+  /*margin: auto;*/
 }
 
 .ciudad {
@@ -93,13 +99,18 @@ footer h6 {
   text-align: center;
   color: #0c6675;
   font-weight: bold;
+ 
 }
 
 /* ----Estilos generales de la página----- */
 * {
   padding: 2px;
+  margin: 0px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+  
+  
+  
 }
 
 main {
@@ -113,6 +124,16 @@ main {
 }
 
 /*---------------------- Estilos para mi menú navegable - Inicio ----------------------*/
+nav .navbar-nav {
+  font-weight: bold;
+  color: #0c6675;
+}
+
+nav .navbar-text {
+  font-weight: bold;
+  color: #0c6675;
+}
+
 a:link {
   color: #0c6675;
   /* Color para enlaces no visitados */
@@ -120,7 +141,7 @@ a:link {
 }
 
 a:visited {
-  color: #3f666d;
+  color: purple;
 }
 
 /* Color para enlaces visitados */
@@ -215,6 +236,7 @@ a:hover {
 }
 
 .card-body {
+  padding: 0;
   background-color: #ABB2B9;
   color: #0c6675;
   /* Modifica color de las letras */
@@ -268,9 +290,7 @@ input:focus {
     margin: 0;
     position: fixed;
   }
-  .contenedor-1 {
-    padding: 5px;
-  }
+  
   .contenedor-2 {
     height: 300px;
     width: 80%;

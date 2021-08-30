@@ -105,8 +105,8 @@ footer h6 {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 2px;
+  padding: 1px;
   background-color: #85929E;
 }
 
@@ -121,16 +121,6 @@ main {
 }
 
 /*---------------------- Estilos para mi menú navegable - Inicio ----------------------*/
-nav .navbar-nav {
-  font-weight: bold;
-  color: #0c6675;
-}
-
-nav .navbar-text {
-  font-weight: bold;
-  color: #0c6675;
-}
-
 a:link {
   color: #0c6675;
   /* Color para enlaces no visitados */
@@ -271,139 +261,6 @@ input:focus {
   color: #0c6675;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100vh;
-}
-
-.chevron {
-  position: absolute;
-  width: 2.1rem;
-  height: 0.48rem;
-  opacity: 0;
-  -webkit-transform: scale(0.3);
-          transform: scale(0.3);
-  -webkit-animation: move-chevron 3s ease-out infinite;
-          animation: move-chevron 3s ease-out infinite;
-}
-
-.chevron:first-child {
-  -webkit-animation: move-chevron 3s ease-out 1s infinite;
-          animation: move-chevron 3s ease-out 1s infinite;
-}
-
-.chevron:nth-child(2) {
-  -webkit-animation: move-chevron 3s ease-out 2s infinite;
-          animation: move-chevron 3s ease-out 2s infinite;
-}
-
-.chevron:before,
-.chevron:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 50%;
-  background: #2c3e50;
-}
-
-.chevron:before {
-  left: 0;
-  -webkit-transform: skewY(30deg);
-          transform: skewY(30deg);
-}
-
-.chevron:after {
-  right: 0;
-  width: 50%;
-  -webkit-transform: skewY(-30deg);
-          transform: skewY(-30deg);
-}
-
-@-webkit-keyframes move-chevron {
-  25% {
-    opacity: 1;
-  }
-  33.3% {
-    opacity: 1;
-    -webkit-transform: translateY(2.28rem);
-            transform: translateY(2.28rem);
-  }
-  66.6% {
-    opacity: 1;
-    -webkit-transform: translateY(3.12rem);
-            transform: translateY(3.12rem);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(4.8rem) scale(0.5);
-            transform: translateY(4.8rem) scale(0.5);
-  }
-}
-
-@keyframes move-chevron {
-  25% {
-    opacity: 1;
-  }
-  33.3% {
-    opacity: 1;
-    -webkit-transform: translateY(2.28rem);
-            transform: translateY(2.28rem);
-  }
-  66.6% {
-    opacity: 1;
-    -webkit-transform: translateY(3.12rem);
-            transform: translateY(3.12rem);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(4.8rem) scale(0.5);
-            transform: translateY(4.8rem) scale(0.5);
-  }
-}
-
-.parallax {
-  height: 800px;
-  width: 100%;
-  background-color: #85929E;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.color2, .color4, .color6 {
-  background-color: #85929E;
-  background-image: url(images/carrusel/justice_comprimida.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-p {
-  letter-spacing: 2px !important;
-  text-align: center;
-  line-height: 120% !important;
-  font-size: 30px !important;
-  font-weight: bold;
-  font-family: cursive;
-  text-shadow: 2px 2px 2px #414040;
-}
-
-.color4 {
-  background-image: url(/images/parallax/office.png);
-}
-
 /* Declaración de variables globales */
 /* Ancho elegido para cada media query y para que sea responsive */
 /*Inicio de medias queries */
@@ -412,7 +269,6 @@ p {
     width: 80%;
     height: 100%;
     margin: 0;
-    position: fixed;
   }
   .contenedor-2__foto {
     height: 250px;
@@ -462,6 +318,20 @@ p {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 575px) {
+  .parallax .color2, .color4, .color6 {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+  }
+  p {
+    letter-spacing: 1px !important;
+    text-align: center;
+    line-height: 100% !important;
+    font-size: 20px !important;
+    font-weight: bold;
+    font-family: cursive;
+    text-shadow: 2px 2px 2px #414040;
+  }
   .card {
     -ms-flex-line-pack: center;
         align-content: center;

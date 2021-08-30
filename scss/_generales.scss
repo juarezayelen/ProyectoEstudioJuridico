@@ -3,15 +3,12 @@
 *{ 
     
     box-sizing: border-box;
-    margin: 0;
-    padding:0;
+    margin: 2px;
+    padding:1px;
     background-color: #85929E ;
-    overflow-y: scroll;
+    
 }
 
-html, body {
-  overflow: visible;
-}
 
 main 
 {
@@ -24,15 +21,6 @@ main
 
 
 /*---------------------- Estilos para mi menú navegable - Inicio ----------------------*/
-
-nav .navbar-nav {
-  font-weight: bold;
-  color: rgb(12, 102, 117);
-}
-nav .navbar-text {
-  font-weight: bold;
-  color: rgb(12, 102, 117);
-}
 
 a:link {
     color:rgb(12, 102, 117); /* Color para enlaces no visitados */

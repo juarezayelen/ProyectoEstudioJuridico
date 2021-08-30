@@ -2,8 +2,6 @@
 @import "header";
 @import "footer";
 @import "generales";
-@import "quienessomos";
-
 
 /* Declaración de variables globales */
 
@@ -19,10 +17,9 @@ $anchoR:80%; /* Ancho elegido para cada media query y para que sea responsive */
       width: $anchoR;
       height:100%;
       margin:0;
-      position:fixed;
+      
     }
-
- 
+   
     .contenedor-2__foto {
       height: 250px; /*ajusto la altura de la foto para dispositivos móviles*/
       width: 200px; /*ajusto el ancho de la foto para dispositivos móviles*/
